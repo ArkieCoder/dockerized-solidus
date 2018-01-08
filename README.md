@@ -1,5 +1,5 @@
 # Dockerized Solidus
-A dockerized, ready-to-go solidus install for demonstration or instruction, or as the starting point for your own modifications.
+A dockerized, ready-to-go solidus install for demonstration or instruction, or as the starting point for your own modifications.  This example uses Postgresql as the database.  Postgresql's authentication data is stored in a Docker <code>.env</code> file and is shared with the database and the app in <code>docker-compose.yml</code>
 
 # Usage
 <code>docker-compose build</code><br/>
