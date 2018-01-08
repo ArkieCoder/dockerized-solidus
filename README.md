@@ -7,7 +7,7 @@ A dockerized, ready-to-go solidus install for demonstration or instruction, or a
 
 Solidus should be available with the default sample data at http://localhost:3000/
 
-Site admin username is <code>admin@site</code>.  Password is <code>pass123</code>
+Site admin username is <code>admin@site</code>.  Password is <code>pass123</code>.
 
 Want a do-over?  Run <code>scripts/do-over.sh</code> and ALL your Docker data (even Docker data not having to do with this project!!!) will go away.  Use with caution.
 
