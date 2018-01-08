@@ -15,4 +15,5 @@ The Rails application is exposed as <code>/app</code>, and can be modified outsi
 
 # Credits
 The install steps are based on Novneet's blog post at http://www.techienov.com/post/solidus-shop/.
+
 More info on Solidus: https://solidus.io/
