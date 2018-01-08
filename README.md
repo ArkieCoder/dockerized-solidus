@@ -1,5 +1,5 @@
 # Dockerized Solidus
-A dockerized, ready-to-go solidus install for demonstration or instruction, or as the starting point for your own modifications.  This example uses Postgresql as the database.  Postgresql's authentication data is stored in a Docker <code>.env</code> file and is shared with the database and the app in <code>docker-compose.yml</code>
+A dockerized, ready-to-go Solidus E-commerce install for demonstration or instruction, or as the starting point for your own modifications.  This example uses Postgresql as the database.  Postgresql's authentication data is stored in a Docker <code>.env</code> file and is shared with the database and the app in <code>docker-compose.yml</code>
 
 # Usage
 <code>docker-compose build</code><br/>
@@ -15,3 +15,4 @@ The Rails application is exposed as <code>/app</code>, and can be modified outsi
 
 # Credits
 The install steps are based on Novneet's blog post at http://www.techienov.com/post/solidus-shop/.
+More info on Solidus: https://solidus.io/
