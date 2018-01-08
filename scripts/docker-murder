@@ -1,0 +1,28 @@
+#!/bin/bash
+
+function docker_murder() {
+  echo "Mercilessly slaughtering all docker data ...."
+  docker ps -qa | xargs --no-run-if-empty docker rm -f
+  docker images -qa | xargs --no-run-if-empty docker rmi -f
+  echo ""
+  echo "DONE - Docker's slate is clean.  I hope that's what you wanted."
+}
+
+argresponse=$1
+if [ "$argresponse" == "-y" ]
+then
+  docker_murder
+  exit 0
+fi
+
+echo "WARNING: Permanently deleting all Docker images and instances!"
+echo -n "Is this what you really want to do? [y/N] "
+read response
+if [ "$response" = "y" ] || [ "$response" = "Y" ]
+then
+  docker_murder
+else
+  echo "You have chosen to show mercy.  Docker data is untouched."
+fi
+
+

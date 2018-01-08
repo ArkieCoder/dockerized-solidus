@@ -1,0 +1,25 @@
+version: '2'
+services:
+  solidus:
+    build: .
+    environment:
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+      - POSTGRES_PORT=5432 
+      - POSTGRES_HOST=db
+      - ADMIN_USER=admin@site
+      - ADMIN_PASS=pass123
+    ports:
+      - 3000:3000
+    volumes:
+      - ./state:/tmp/state
+      - ./app:/usr/src/app
+    depends_on:
+      - db
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data

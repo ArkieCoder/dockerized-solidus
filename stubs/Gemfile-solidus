@@ -1,0 +1,2 @@
+gem 'solidus'
+gem 'solidus_auth_devise'
