@@ -6,7 +6,7 @@ A dockerized, ready-to-go Solidus E-commerce install for demonstration or instru
 
 Solidus should be available with the default sample data at http://localhost:3000/
 
-Site admin username is <code>admin@site</code>.  Password is <code>pass123</code>.
+Site admin username is <code>admin@site</code>.  Password is <code>pass123</code>.  To change these, edit <code>scripts/post_init.sh</code>.
 
 Want a do-over?  Run <code>scripts/do-over.sh</code> and ALL your Docker data (even Docker data not having to do with this project!!!) will go away.  Use with caution.
 
